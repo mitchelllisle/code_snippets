@@ -15,9 +15,3 @@ for (i in 1:1) {
   print(users)
   message("End: Page ", i)
 }
-
-# MusicBrainz nested JSON structure impelemenation 
-musicbrainz_artist <- function(artist_mbid){
-  req <- fromJSON("http://musicbrainz.org/ws/2/artist/420ca290-76c5-41af-999e-564d7c71f1a7?inc=&fmt=json", flatten = TRUE)
-  data.frame(rbind(req))
-}
