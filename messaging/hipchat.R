@@ -19,3 +19,10 @@
 hipchat_send('room', 'AppSpeak', 'notification',
              color = 'yellow', message = paste('This is a message with a variable', answer[1]),
              notify = TRUE, message_format = 'html')
+
+# Send an Image to Hipchat Room
+
+hipchat_send('room', 'AppSpeak', 'notification',
+             color = 'green', 
+             message = paste('HIPCHAT TEST: Look at this picture: <img src="https://URL">'),
+             notify = TRUE, message_format = 'html')
