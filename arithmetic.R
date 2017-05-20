@@ -22,3 +22,11 @@ cos(3) # cosine of 3
 sin(3) # sine of 3
 tan(3) # tangent of 3
 abs(-3) # absolute value of -3
+
+# Other computations
+# Calculating Per 100,000 x (100,000 could be any value E.g. per 1000 etc)
+x = 185
+y_total = 24,071
+x/y_total*100000 = x per 100,000
+
+185/24071*100000 = 768.55967762
