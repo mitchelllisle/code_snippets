@@ -15,6 +15,7 @@ future <- make_future_dataframe(m, periods = 24, freq = "m", include_history = T
 forecast <- predict(m, future)
 
 # Plot forecast
-mlr_line(forecast$ds, forecast$yhat, ribbon_lower = forecast$yhat_lower, ribbon_upper = forecast$yhat_upper)
+mlr_ribbon(forecast$ds, forecast$yhat, ribbon_lower = forecast$yhat_lower, ribbon_upper = forecast$yhat_upper)
 
-
+# Plot Original Data
+mlr_line(data$ds, data$y)
