@@ -4,7 +4,7 @@ library(AnomalyDetection)
 library(ggplot2)
 library(mlr)
 
-data <- read.csv("Desktop/data.csv")
+data <- read.csv("https://raw.githubusercontent.com/mitchelllisle/code_snippets/master/machine_learning/misc/anomaly_data/anomaly_data.csv")
 
 data <- data %>%
   mutate(date_local = as.POSIXct(date_local))
